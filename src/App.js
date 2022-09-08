@@ -1,5 +1,6 @@
-import React, { Components }from "react";
-import { Header, Footer } from 'src/Components';
+import React from 'react';
+import  Header from './Component/Header';
+import Footer from './Component/Footer';
 
 import './App.css';
 
