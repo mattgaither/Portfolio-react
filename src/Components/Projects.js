@@ -1,12 +1,11 @@
 import React from 'react';
-import { 
-  RunBuddy,
-  Horiseon,
-  Stockwise,
-  KingsMile } from '../assets/Images'
-
-// import ProjectCard from './pages/ProjectCard';
 import Card from 'react-bootstrap/Card';
+
+
+const RunBuddy = require('../assets/Images/RunBuddy.jpg')
+const Horiseon = require('../assets/Images/Horiseon.jpg')
+const Stockwise = require('../assets/Images/Stockwise.jpg')
+const KingsMile = require('../assets/Images/The-Kings-Mile.jpg')
 
 
 const Projects = () => {
@@ -46,20 +45,40 @@ const Projects = () => {
   },
   ];
 
-  const renderCard = ( card, index ) => {
+  // const renderCard = ( card, index ) => {
+  //   return (
+  //     <Card className="bg-dark text-white" key={ index }>
+  //       <Card.Img src={card.img} alt="Card image"/>
+  //       <Card.ImgOverlay src={card.img} alt="Card image">
+  //         <Card.Title>{card.appName}</Card.Title>
+  //         {/* <a href={card.github} >GitHub Page</a> <br/>
+  //         <a href={card.link} className="Card text">Deployed Page</a> */}
+  //         <Card.Text><a href={card.github} >GitHub Page</a> </Card.Text>
+  //         <Card.Text><a href={card.link} >Deployed Page</a> </Card.Text>
+  //       </Card.ImgOverlay>
+  //     </Card>
+  //   );
+  // };
+
+  const renderCard = (card ,index ) => {
     return (
-      <Card className="bg-dark text-white" key={ index }>
-        <Card.Img src={card.img} alt="Card image" />
-        <Card.ImgOverlay>
-          <Card.Title>{card.appName}</Card.Title>
-          <a href={card.github} >GitHub Page</a> <br/>
-          <a href={card.link} className="Card text">Deployed Page</a>
-          {/* <Card.Text><a href={projectInfo.github} >GitHub Page</a> </Card.Text>
-          <Card.Text><a href={projectInfo.link} >Deployed Page</a> </Card.Text> */}
-        </Card.ImgOverlay>
-      </Card>
+      <div className="card-container">
+         
+            <Card>
+              <Card.Img variant="top" src={card.img}   />
+              <Card.Body>
+                <Card.Title>{card.appName}</Card.Title>
+                <Card.Text>
+                <a href={card.github} >GitHub Page</a> <br/>
+          <a href={card.link} className="Card text">Deployed Page</a> 
+                </Card.Text>
+              </Card.Body>
+            </Card>
+         
+      </div>
     );
-  };
+  }
+  
   return <div className="Projects"> {projectInfo.map(renderCard)} </div>
 };
 

@@ -7,16 +7,16 @@ const Footer = () => {
     <div className="main-footer">
       <div className="icon-container">
         <a href="https://github.com/mattgaither">
-          <FaGithub className="github-icon" />
+          <FaGithub className="icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/benjamin-gaither-88732794/"
           className="linkedin"
         >
-          <FaLinkedin className="linkedin-icon" />
+          <FaLinkedin className="icon" />
         </a>
         <a href="mailto:mattgaither2@gmail.com">
-          <FaEnvelope className="email-icon" />
+          <FaEnvelope className="icon" />
         </a>
       </div>
     </div>

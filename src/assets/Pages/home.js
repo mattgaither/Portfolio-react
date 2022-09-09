@@ -1,20 +1,26 @@
-
 export default function Home() {
   return (
-    <div>
+    <div className="About-me ">
       <h2>About Me</h2>
+      <div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
+        My name is Benjamin (Matt) Gaither. I am working on completeing a Full
+        Stack Bootcamp that is offered by Michigan State University and I am
+        also in Jefferson State Community College working towards a degree. I
+        decided to change my occupation when the pandemic started and took my
+        job. I have worked in a customer service for the past two years and have
+        learned a lot about engineering roles while working. I am a dedicated
+        hard worker and I am never afraid to ask questions. I have been on the
+        other side of the technology long enough to know and explain what could
+        make hundreds of positions easier for the company, which in turn will
+        maximize productivity and decrease employee burn out. My experience in
+        my current role will provide valuable insights and a fresh perspective
+        to the engineering role. Personally, I am looking for a long term
+        carreer in something I love to do and will excel at quickly. I hope you
+        can tell how hard I work and by the determination I put in the following
+        projects and how this will benefit the company.
       </p>
+      </div>
     </div>
   );
-};
+}

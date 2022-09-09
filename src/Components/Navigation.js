@@ -1,6 +1,10 @@
 import React, { useState } from "react";
-import { Home, Resume, Projects, ContactForm } from "../assets/Pages"
-
+import NavTabs from "../utils/Nav-helper";
+import Home from "../assets/Pages/Home";
+import Projects from "./Projects";
+import ContactForm from "../assets/Pages/Contact";
+import Resume from "../assets/Pages/Resume";
+import "../stylesheets/Nav.css"
 
 export default function Nav() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -16,7 +20,7 @@ export default function Nav() {
       return <Projects />;
     }
     if (currentPage === "Contact Me") {
-    return <ContactForm />;
+      return <ContactForm />;
     }
   };
 

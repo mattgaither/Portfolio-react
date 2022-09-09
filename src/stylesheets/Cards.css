@@ -1,0 +1,17 @@
+
+div.card { 
+  height: 400px ;
+  width: 600px ;
+}
+
+img.card-img-top{ 
+  height:300px;
+  width: 500px
+}
+
+div.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+  margin-top: 100px;
+}
