@@ -1,47 +1,70 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
+import { Form, Input, TextArea, Button } from 'semantic-ui-react';
+import Swal from 'sweetalert2';
+
+import '../../App.css';
+
+const SERVICE_ID = "service_4l8mb8e";
+const TEMPLATE_ID = "template_uvp92a3";
+const USER_ID = "VR-lUx4N7eqMHNHoS";
 
 
+const App = () => {
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+        console.log(result.text);
+        Swal.fire({
+          icon: 'success',
+          title: 'Message Sent Successfully'
+        })
+      }, (error) => {
+        console.log(error.text);
+        Swal.fire({
+          icon: 'error',
+          title: 'Ooops, something went wrong',
+          text: error.text,
+        })
+      });
+    e.target.reset()
+  };
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      email: '',
-      message: ''
-    }
-  }
-  render() {
-    return(
-      <div className="App">
-        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Email address</label>
-            <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-          </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
-        </form>
-      </div>
-    );
-  }
-  onNameChange(event) {
-    this.setState({name: event.target.value})
-  }
-  onEmailChange(event) {
-    this.setState({email: event.target.value})
-  }
-  onMessageChange(event) {
-    this.setState({message: event.target.value})
-  }
-  handleSubmit(event) {
-  }
+  return (
+    <div className="ContactForm">
+      <Form onSubmit={handleOnSubmit}>
+        <Form.Field
+          id='form-input-control-email'
+          control={Input}
+          label='Email'
+          name='user_email'
+          placeholder='Email…'
+          required
+          icon='mail'
+          iconPosition='left'
+        />
+        <Form.Field
+          id='form-input-control-last-name'
+          control={Input}
+          label='Name'
+          name='user_name'
+          placeholder='Name…'
+          required
+          icon='user circle'
+          iconPosition='left'
+        />
+        <Form.Field
+          id='form-textarea-control-opinion'
+          control={TextArea}
+          label='Message'
+          name='user_message'
+          placeholder='Message…'
+          required
+        />
+        <Button type='submit' color='green'>Submit</Button>
+      </Form>
+    </div>
+  );
 }
 export default App;
