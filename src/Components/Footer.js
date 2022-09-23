@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="main-footer">
+    <footer className="footer--pin">
       <div className="icon-container">
         <a href="https://github.com/mattgaither">
           <FaGithub className="icon" />
@@ -19,7 +19,7 @@ const Footer = () => {
           <FaEnvelope className="icon" />
         </a>
       </div>
-    </div>
+    </footer>
   );
 };
 
