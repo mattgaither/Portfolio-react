@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../assets/Pages/Project-cards"
-import { data } from "../assets/data/projectData";
+import { data } from "../assets/Data/projectData";
 
 
 
