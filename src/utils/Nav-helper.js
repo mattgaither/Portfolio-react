@@ -3,9 +3,7 @@ import React from "react";
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div className="nav nav-tabs">
-      <ul className={
-            currentPage === "Home" ? "nav-item active" : "nav-item"
-          }>
+      <ul className={currentPage === "Home" ? "nav-item active" : "nav-item"}>
         <a
           href="#home"
           onClick={() => handlePageChange("Home")}
@@ -16,9 +14,9 @@ function NavTabs({ currentPage, handlePageChange }) {
           Home
         </a>
       </ul>
-      <ul  className={
-            currentPage === "Projects" ? "nav-item active" : "nav-item"
-          }>
+      <ul
+        className={currentPage === "Projects" ? "nav-item active" : "nav-item"}
+      >
         <a
           href="#project"
           onClick={() => handlePageChange("Projects")}
@@ -30,9 +28,11 @@ function NavTabs({ currentPage, handlePageChange }) {
           Projects
         </a>
       </ul>
-      <ul className={
-            currentPage === "Contact Me" ? "nav-item active" : "nav-item"
-          }>
+      <ul
+        className={
+          currentPage === "Contact Me" ? "nav-item active" : "nav-item"
+        }
+      >
         <a
           href="#contact"
           onClick={() => handlePageChange("Contact Me")}
@@ -44,9 +44,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Contact Me
         </a>
       </ul>
-      <ul className={
-            currentPage === "Resume" ? "nav-item active" : "nav-item"
-          }>
+      <ul className={currentPage === "Resume" ? "nav-item active" : "nav-item"}>
         <a
           href="#resume"
           onClick={() => handlePageChange("Resume")}

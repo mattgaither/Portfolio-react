@@ -38,27 +38,27 @@ nav {
   align-self: center;
 }
 
-h3{
+h3 {
   margin: 25px;
 }
 
-img{
+img {
   height: 100px;
   width: 100px;
-  
+
 }
 
-.App-logo{
+.App-logo {
   animation: App-logo-spin infinite 20s linear;
 }
 
 
-.img-div{
+.img-div {
   display: flex;
   justify-content: space-evenly;
 }
 
-.img-top{
+.img-top {
   width: 225px;
 }
 
@@ -66,6 +66,7 @@ img{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg)
   }

@@ -1,8 +1,7 @@
-
 .App {
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-} 
+}
 
 .ContactForm {
   display: flex;
@@ -15,34 +14,34 @@
   background-color: darkgrey;
 }
 
-.ui.form{
+.ui.form {
   justify-content: center;
   align-items: center;
   height: 30rem;
   width: 40rem;
 }
 
-.required.field{
+.required.field {
   margin: 5px;
   padding: 10px
 }
 
-.ui.left.icon.input{
+.ui.left.icon.input {
   padding: 10px;
 }
 
-label{
+label {
   padding: 10px;
 }
 
-textarea{
+textarea {
   width: 530px;
   height: 100px;
   padding: 10px;
   border-radius: 10px;
 }
 
-.videoTag { 
+.videoTag {
   position: fixed;
   min-height: 100%;
   min-width: 100%;
@@ -55,7 +54,7 @@ textarea{
   object-position: center;
 }
 
-.content-container{
+.content-container {
   min-height: 100vh;
 }
 
@@ -71,41 +70,41 @@ textarea{
   opacity: 0.95;
 }
 
-.About-me h2{
+.About-me h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 4rem;
   text-align: center;
   text-decoration: double;
 }
 
-.about-content{
+.about-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.myPhoto{
+.myPhoto {
   height: 350px;
   width: 350px;
   border-radius: 50%;
   margin: 20px;
 }
 
-.about-text{ 
+.about-text {
   padding: 15px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 22px;
 
 }
 
-.stock-img{
+.stock-img {
   height: 150px;
   width: 150px;
   border-radius: 50%;
 }
 
 
-.Projects{
+.Projects {
   overflow-y: scroll;
   position: relative;
   margin-bottom: 15px 10px 100px 10px;
@@ -117,22 +116,22 @@ textarea{
   height: 95px;
   bottom: 0;
   right: 0;
-  left: 0; 
-  background-color:darkgrey ;
+  left: 0;
+  background-color: darkgrey;
   opacity: 0.9;
   align-content: center;
 
 }
 
 div.icon-container {
-  display: flex ;
+  display: flex;
   justify-content: space-evenly;
 }
 
-svg { 
+svg {
   height: 4rem;
-  width: 4rem; 
-  color:dodgerblue; 
+  width: 4rem;
+  color: dodgerblue;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -142,30 +141,30 @@ svg {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .about-text {
     font-size: 17px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
   }
 
-  .myPhoto{
+  .myPhoto {
     height: 200px;
     width: 200px;
     opacity: 1;
     text-align: center;
   }
 
-  .About-me{
+  .About-me {
     margin: 25px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 279px) {
-  .about-text{ 
+  .about-text {
     padding: 15px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 20px;
     width: 500px;
@@ -175,9 +174,9 @@ svg {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .about-text{ 
+  .about-text {
     padding: 15px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 22px;
     width: 700px;
@@ -186,9 +185,9 @@ svg {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .about-text{ 
+  .about-text {
     padding: 15px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 22px;
     min-width: 500px;
@@ -196,23 +195,23 @@ svg {
 }
 
 @media only screen and (min-width: 1310px) {
-  .about-text{ 
+  .about-text {
     text-align: justify;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1310px) {
-  .about-text{ 
+  .about-text {
     padding: 15px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 22px;
-    
+
   }
 }
 
 @media only screen and (min-width: 1709px) {
-  .about-text{ 
+  .about-text {
     padding: 15px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 22px;
@@ -231,27 +230,27 @@ svg {
     margin: 90px auto;
     background-color: darkgrey;
   }
-  
-  .ui.form{
+
+  .ui.form {
     justify-content: center;
     align-items: center;
-    
+
   }
-  
-  .required.field{
+
+  .required.field {
     margin: 5px;
     padding: 5px
   }
-  
-  .ui.left.icon.input{
+
+  .ui.left.icon.input {
     padding: 5px;
   }
-  
-  label{
+
+  label {
     padding: 10px;
   }
-  
-  textarea{
+
+  textarea {
     width: 200px;
     height: 100px;
     padding: 10px;
@@ -265,6 +264,7 @@ svg {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
