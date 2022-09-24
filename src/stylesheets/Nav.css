@@ -1,5 +1,40 @@
-
-div.nav.nav-tabs{
+.nav.nav-tabs {
   display: flex;
-  justify-content: right;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  background-color: slategrey;
+  height: 75px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.nav-link {
+  margin-right: auto;
+  margin-left: auto;
+  color: honeydew;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.nav-item.active {
+  background-color: blue;
+}
+
+.nav-link.active { 
+  color: rgb(233, 136, 0);
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
 }

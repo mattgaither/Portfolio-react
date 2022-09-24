@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import NavTabs from "../utils/Nav-helper";
 import Home from "../assets/Pages/Home";
-import Projects from "./Projects"
+import Projects from "./Projects";
 import ContactForm from "../assets/Pages/Contact";
 import Resume from "../assets/Pages/Resume";
-import "../stylesheets/Nav.css"
+import "../stylesheets/Nav.css";
 
 export default function Nav() {
   const [currentPage, setCurrentPage] = useState("Home");
