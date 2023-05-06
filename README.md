@@ -9,6 +9,7 @@
 
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Link](#link)
   - [License](#license)
   - [Contribution](#contribution)
   - [Tests](#tests)
@@ -19,6 +20,9 @@
 
   ## Usage
   It will show projects for employers and whomever else wants to see.
+
+  ## Link
+  This is the link to the <a herf='https://mattgaither.github.io/'>React Portfolio</a>
 
   ## License
   The license this application is covered under is: [MIT license](https://opensource.org/licenses/MIT)
