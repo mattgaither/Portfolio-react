@@ -22,7 +22,7 @@
   It will show projects for employers and whomever else wants to see.
 
   ## Link
-  This is the link to the [React Portfolio](www.mattgaither.github.io)
+  This is the link to the [React Portfolio](https://mattgaither.github.io/)
   ## License
   The license this application is covered under is: [MIT license](https://opensource.org/licenses/MIT)
   
@@ -34,6 +34,6 @@
   No tests 
 
   ## Questions
-  For any further questions visit my [GitHub](www.github.com/mattgaither)
+  For any further questions visit my [GitHub](https://github.com/mattgaither/mattgaither.github.io)
   Or email me: mattgaither2@gamil.com
   
